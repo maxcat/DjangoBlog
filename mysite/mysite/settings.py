@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'blog',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -67,6 +69,11 @@ TEMPLATES = [
         },
     },
 ]
+
+TEMPLATE_DIRS = (
+        "/home/ec2-user/DjangoBlog/mysite/blog/templates",
+        )
+
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
